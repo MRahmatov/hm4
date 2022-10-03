@@ -12,4 +12,4 @@ __Полезные команды__
 * $ docker-compose ps
 * $ docker-compose exec [service name] [command]
 * $ docker-compose images
-* 
+*
