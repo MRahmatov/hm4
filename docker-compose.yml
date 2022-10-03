@@ -1,0 +1,17 @@
+version: "3"
+services: 
+  db:
+    image: postgres:latest
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_PASSWORD: example
+    volumes:
+      - ".: ./db_data"
+  dbviwer:
+    image: adminer:latest
+    ports:
+      - '8080:80'
+    depends_on:
+      - db
+  
